@@ -1,0 +1,10 @@
+Domain: Library
+  A library lends books to members.
+
+Aggregate: Book
+  A book is identified by its isbn.
+
+  It has:
+    an isbn: text
+    a title: text
+    a copies: whole number, optional

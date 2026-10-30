@@ -1,0 +1,12 @@
+Hecks.bluebook "Library" do
+  vision "A library lends books to members."
+  aggregate "Book" do
+    identified_by :isbn
+    value_object "BookIsbn", String
+    attribute :isbn, BookIsbn
+    value_object "BookTitle", String
+    attribute :title, BookTitle
+    value_object "BookCopies", Integer
+    attribute :copies, BookCopies, optional: true
+  end
+end
